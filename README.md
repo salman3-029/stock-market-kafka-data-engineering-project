@@ -5,6 +5,10 @@ In this project, you will execute an End-To-End Data Engineering Project on Real
 
 We are going to use different technologies such as Python, Amazon Web Services (AWS), Apache Kafka, Glue, Athena, and SQL.
 
+## Customisation
+This project was executed from local machine using Docker Jupyter image available at: https://hub.docker.com/r/jupyter/scipy-notebook
+This container did not allow for sudo rights, hence I could not install AWS CLI which was needed to upload data to S3 from Kafka Consumer.
+However, I have used `boto3` library as an alternative. 
 ## Architecture 
 <img src="Architecture.jpg">
 
